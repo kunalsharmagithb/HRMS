@@ -1,13 +1,16 @@
 
 import './App.css'
-import Login from './auth/login'
+import { Routes, Route } from 'react-router-dom'
+import Login from './auth/Login'
+import Forget from './auth/Forgetpass'
 
 function App() {
 
   return (
-    <>
-    <Login/>
-    </>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path='/Forget' element= {<Forget/>} />
+    </Routes>
   )
 }
 

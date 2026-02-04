@@ -58,7 +58,7 @@
 .password  input::placeholder {color: rgba(0, 0, 0, .75);}
 .password  .hide {position: absolute;right: 20px;width: 25px;height: 25px; bottom:12px; cursor: pointer;background-image: url(../assets/images/close-eye.png);background-repeat:no-repeat; background-position:center; background-size:contain;}
 .password .hide.show {background: url(../assets/images/open-eye.png); background-repeat:no-repeat; background-position:center; background-size:contain;}
-
+.input-fields{width: 100%;}
 
 .otp-content-box {display: flex;flex-wrap: wrap;width: calc(100% + 40px);margin-left: -20px !important;margin: 30px 0;}
 .otp-box {width: 25%;padding: 0 20px;border: 1px;}
