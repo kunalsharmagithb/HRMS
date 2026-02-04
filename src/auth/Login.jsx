@@ -32,12 +32,11 @@ const Login = () => {
             <div className="login-heading">
                 <img src={logo}  alt=""/>
             </div>
-            <form className="login__form" method="post" action="">
+            <div className="login__form" method="post" >
                 <div className="login__form-wrapper">
                     <h1>Welcome Back !</h1>
                     <p>Sign in to continue to Eduminds Learning.</p>
                     <div className="login__field-group">
-                        <label className="login__label" htmlFor="user-email">Username or Email</label>
                         <Box
                             component="form"
                             noValidate
@@ -47,8 +46,7 @@ const Login = () => {
                         </Box>
                     </div>
                     <div className="login__field-group password-field mt-3">
-                        <label className="login__label" htmlFor="password">Password</label>
-                        <FormControl fullWidth sx={{  }} variant="outlined">
+                        <FormControl fullWidth  variant="outlined">
                             <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
                             <OutlinedInput
                                 id="outlined-adornment-password"
@@ -77,7 +75,7 @@ const Login = () => {
                             <input className="login__checkbox" type="checkbox" name="remember_me"/>
                             <span>Remember me</span>
                         </label>
-                        <Link href="/Forget">Forgot password</Link> 
+                        <Link href="/MailSend">Forgot password</Link> 
                     </div>
                     <button className= "login__btn" type="button" data-login="false" >
                         <span className="login__btn-label">Sign in</span>
@@ -85,7 +83,7 @@ const Login = () => {
                     </button>
                     <p className="login__sign-up">Don’t have an account? <a href="#">Sign up</a></p>
                 </div>
-            </form>
+            </div>
             <div className="login-lower-heading">
                 <p>© <span data-year>2026</span> Eduminds Learning. All rights reserved.</p>
             </div>
@@ -94,7 +92,7 @@ const Login = () => {
             <div className="login-bg-img">
                 <div className="login__testimonial">
                     <div className="login-text">
-                        <h4> <q> Assduff Jekyll has helped us kick-start projects in a bang and save thousands of hours of work. </q> </h4>
+                        <h4> <q> Your workplace, just one login away. </q> </h4>
                     </div>
                 </div>
             </div>
