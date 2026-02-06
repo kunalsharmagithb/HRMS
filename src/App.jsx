@@ -1,7 +1,7 @@
 
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Login from './auth/login'
+import Login from './auth/Login'
 import Forget from './auth/Forgetpass'
 import Mailsender from './auth/Mailsender'
 import Otp from './auth/Otp'

@@ -1,4 +1,7 @@
 import * as React from 'react'
+import "bootstrap/dist/css/bootstrap.min.css";
+// import bgimg from "../assets/images/bg2.jpg"
+
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
@@ -27,7 +30,7 @@ const Login = () => {
 
   return (
     <div>
-        <main className="login-content-box">
+        {/* <main className="login-content-box">
         <div className="login-content">
             <div className="login-heading">
                 <img src={logo}  alt=""/>
@@ -97,7 +100,103 @@ const Login = () => {
                 </div>
             </div>
         </div>
-    </main>
+    </main> */}
+    
+        <div className="outerdiv-main h-screen w-full bg-center bg-cover bg-no-repeat overflow-hidden">
+            {/* <img src={bgimg} alt="" className=''/> */}
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-7">
+                        <div className="left-section h-screen w-full relative">
+                            <div className="logo my-4 mx-4">
+                                <img src={logo} alt="" />
+                            </div>
+                            <div className="overlay-textbox absolute bottom-16">
+                                <p className='text-3xl text-amber-50 w-70'>Your Workspace just one log in away.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-5">
+                        <div className="right-section bg-amber-50 rounded-[10px] z-10">
+                            <main className="login-content-box">
+                                <div className="login-content">
+                                    {/* <div className="login-heading">
+                                        <img src={logo}  alt=""/>
+                                    </div> */}
+                                    <div className="login__form" method="post" >
+                                        <div className="login__form-wrapper">
+                                            <h1>Welcome Back !</h1>
+                                            <p>Sign in to continue to Eduminds Learning.</p>
+                                            <div className="login__field-group">
+                                                <Box
+                                                    component="form"
+                                                    noValidate
+                                                    autoComplete="off"
+                                                    >
+                                                    <TextField id="outlined-basic" label="Username" variant="outlined" className="input-fields"/>
+                                                </Box>
+                                            </div>
+                                            <div className="login__field-group password-field mt-3">
+                                                <FormControl fullWidth  variant="outlined">
+                                                    <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                                                    <OutlinedInput
+                                                        id="outlined-adornment-password"
+                                                        type={showPassword ? 'text' : 'password'}
+                                                        endAdornment={
+                                                        <InputAdornment position="end">
+                                                            <IconButton
+                                                            aria-label={
+                                                                showPassword ? 'hide the password' : 'display the password'
+                                                            }
+                                                            onClick={handleClickShowPassword}
+                                                            onMouseDown={handleMouseDownPassword}
+                                                            onMouseUp={handleMouseUpPassword}
+                                                            edge="end"
+                                                            >
+                                                            {showPassword ? <VisibilityOff /> : <Visibility />}
+                                                            </IconButton>
+                                                        </InputAdornment>
+                                                        }
+                                                        label="Password"
+                                                    />
+                                                </FormControl>
+                                            </div>
+                                            <div className="login__field-group login__field-group--horz">
+                                                <label className="login__label login__label--horz">
+                                                    <input className="login__checkbox" type="checkbox" name="remember_me"/>
+                                                    <span>Remember me</span>
+                                                </label>
+                                                <Link href="/MailSend">Forgot password</Link> 
+                                            </div>
+                                            <button className= "login__btn" type="button" data-login="false" >
+                                                <span className="login__btn-label">Sign in</span>
+                                                <span className="login__btn-spinner"></span>
+                                            </button>
+                                            <p className="login__sign-up">Don’t have an account? <a href="#">Sign up</a></p>
+                                        </div>
+                                    </div>
+                                    <div className="login-lower-heading">
+                                        <p>© <span data-year>2026</span> Eduminds Learning. All rights reserved.</p>
+                                    </div>
+                                </div >
+                                {/* <div className="login-content right">
+                                    <div className="login-bg-img">
+                                        <div className="login__testimonial">
+                                            <div className="login-text">
+                                                <h4> <q> Your workplace, just one login away. </q> </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> */}
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
   )
 }
